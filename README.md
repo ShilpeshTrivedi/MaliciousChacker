@@ -18,4 +18,10 @@ The given IP, URL OR Domain having history else contains any malware family, The
 
 python MaliciousChacker.py
 
+# Example
+
+![alt text](https://github.com/ShilpeshTrivedi/MaliciousChacker/blob/master/Example.JPG)
+
 # OutPut
+
+![alt text](https://github.com/ShilpeshTrivedi/MaliciousChacker/blob/master/csv.JPG)
