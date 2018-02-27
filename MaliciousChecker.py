@@ -1,6 +1,7 @@
 from cybercrimetracker.cybercrimeTrackerAPI import cybercrimeTrackerAPI
 import sys
 import json
+import time
 
 print '\n\n'
 print '\t*********************************'
@@ -25,6 +26,7 @@ try:
             temp=json.dumps(cybercrimeTrackerAPI().search(query))
         
             try:
+                time.sleep(1)
                 print ' [+] '+query + " Found As -> " + json.dumps(cybercrimeTrackerAPI().search(query)[0]['type'])
                 file.write(query+','+json.dumps(cybercrimeTrackerAPI().search(query)[0]['type']))
                 file.write('\n')
@@ -35,7 +37,7 @@ try:
         except KeyboardInterrupt:
             print "\n Program hasbeen halted Ctrl + C Pressed"
             print '\n\n Open cybercrime-tracker.net.csv file for result'
-            exit() 
+            exit()
     file.close()
     print '\n\n Open cybercrime-tracker.net.csv file for result'
 except IOError:
